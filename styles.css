@@ -1,18 +1,75 @@
 * {
     padding: 0;
     margin: 0;
+    text-align: center;
+    font-family: 'Nobile', sans-serif;
 }
-
-
-/* Main Section */
-
 
 /* Nav Bar */
 .nav{
     display: flex;
+    justify-content: center;
+
 }
 
-/* Images Section */
+.left {
+    width: 50%;
+    height: 100vh;
+}
 
+.right {
+    width: 50%;
+}
+
+.titles {
+    vertical-align: middle;
+    line-height: 100vh; 
+}
+/* Main Section */
+.main {
+    background-image: url("img/andrea-leopardi-QVD3Xht9txA-unsplash.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    color: white;
+}
+
+.main .nav{
+    position: relative;
+    top: 800px;
+}
+
+.main h1{
+    position:relative;
+    top: 250px;
+    font-size: 4rem;
+}
+
+/* About Section */
+
+.about {
+    width: 100%;
+    height: 100vh;
+}
+
+.about .left{
+    background-color: salmon;
+}
+
+
+
+/* Images Section */
+.images {
+    width: 100%;
+    height: 100vh;
+}
 
 /* Sponsors Section */
+.sponsors {
+    width: 100%;
+    height: 100vh;
+}
+
+.sponsors .left {
+    background-color:slategray;
+}
