@@ -12,18 +12,31 @@
 
 }
 
+
 .left {
     width: 50%;
     height: 100vh;
+    position: relative;
+    z-index: 1;
+
 }
 
 .right {
     width: 50%;
+    height: 100vh;
+    z-index: 0;
+    /* background-color: pink; */
 }
 
 .titles {
     vertical-align: middle;
     line-height: 100vh; 
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 /* Main Section */
 .main {
@@ -42,7 +55,8 @@
 .main h1{
     position:relative;
     top: 250px;
-    font-size: 4rem;
+    font-size: 5rem;
+    font-family: 'Sedgwick Ave', cursive;
 }
 
 /* About Section */
@@ -50,26 +64,75 @@
 .about {
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: row;
 }
 
 .about .left{
     background-color: salmon;
 }
 
-
+.about .left h1 {
+    font-size: 4rem;
+}
 
 /* Images Section */
 .images {
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: row;
+    scroll-snap-type: y mandatory;
+}
+.images .left {
+
+}
+.images .left h1 {
+    font-size: 4rem;
+
 }
 
+.images .right{
+    overflow:scroll;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.images img{
+    height:800px;
+    width: 100%;
+    object-fit: cover;
+    justify-self: flex-end;
+
+}
 /* Sponsors Section */
 .sponsors {
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: row;
 }
 
 .sponsors .left {
     background-color:slategray;
+}
+
+.sponsors .left h1 {
+    font-size: 4rem;
+}
+.sponsors .right{
+    overflow:scroll;
+    display: flex;
+    flex-direction: column;
+
+}
+.sponsors img{
+    height: 900px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sponsors .right{
+    overflow:scroll;
 }
