@@ -16,6 +16,8 @@
 }
 
 
+
+
 .left {
     width: 50%;
     height: 100vh;
@@ -163,4 +165,48 @@ a {
 }
 .sponsors .left a{
     color: white;
+}
+
+
+
+@media only screen and (max-width: 480px){
+    .about, .images, .sponsors{
+        display: inline;
+
+    }
+
+    .titles{
+        line-height: 50vh;
+    }
+
+    .left{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .right {
+        width: 100%;
+
+    }
+
+    .nav {
+        font-size: .7rem;
+    }
+
+    h2 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .images .left {
+        background-color: slategray;
+        color: white;
+    }
+    .images .left a{
+        color: white;
+    }
+
+    .sponsors .left{
+        background-color: salmon;
+    }
 }
